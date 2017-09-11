@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Welcome this Jobschool Official Site {% endblock %}
+{% block headmessage %}
+    <h3 style='font-family:標楷體;'>文章列表</a>
+{% endblock %}
+{% block content %}
+    {% for post in posts %}
+	    <p style='font-family:微軟正黑體;font-size:16pt;font-weight=bold;'>
+		    <a href='/post/{{post.slug}}'> {{post.title}} </a>
+		</p>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+<!-- post.html -->
+{% extends 'base.html' %}
+{% block title %} Jobs Test Posts {% endblock %}
+{% block headmessage %}
+    <h3 style='font-family:標楷體;'>{{ post.title }}</a>
+	<a style='font-family:微軟正黑體;' href='/'> Home</a>
+{% endblock %}
+{% block content %}
+    <p style='font-family:微軟正黑體;font-size:16pt;font-weight=bold;'>
+	    {{post.body}} 
+	</p>
+{% endblock %}
